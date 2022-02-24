@@ -26,19 +26,19 @@ Product.init(
       validate: {
         isDecimal: true,
       },
-      stock: {
-        type: DataTypes.INTEGER,
-        defaultValue: 10,
-        validate: {
-          isNumeric: true,
-        },
+    },
+    stock: {
+      type: DataTypes.INTEGER,
+      defaultValue: 10,
+      validate: {
+        isNumeric: true,
       },
-      category_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'category',
-          key: 'id',
-        },
+    },
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id',
       },
     },
   },
